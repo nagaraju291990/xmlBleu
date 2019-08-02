@@ -1,0 +1,84 @@
+Specification to convert source/MT/PE file into XML structure to calculate the BLEU Score.
+
+A) Source Spec
+
+pre-assumption : Tokenized on source file.
+
+Input parameters
+1) Source file
+2) Source language
+
+Default value : setid="example_set", docid="doc1", genre="nw"
+Target XML Structure: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval>
+<srcset setid="example_set" srclang="English">
+<doc docid="doc1" genre="nw">
+<p>
+<seg id="1">Sent-1</seg>
+<seg id="2">Sent-2</seg>
+:
+:
+
+</p>
+</doc>
+</srcset>
+</mteval>
+
+B) MT/PE/RE file Spec
+
+pre-assumption : Tokenized on source file.
+
+Input parameters
+1) Source file (MT/PE/RE output)
+2) Source language
+3) Target language
+
+Default value : setid="example_set", docid="doc1", sysid="sample_system", genre="nw"
+
+Target XML Structure: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval>
+<tstset setid="example_set" srclang="English" trglang="Hindi" sysid="sample_system">
+<doc docid="doc1" genre="nw">
+<p>
+<seg id="1">MT/PE/RE Sent-1</seg>
+<seg id="2">MT/PE/RE Sent-2</seg>
+:
+:
+
+</p>
+</doc>
+</tstset>
+</mteval>
+C) Reference/Gold/Human file Spec
+
+pre-assumption : Tokenized on source file.
+
+Input parameters
+1) Source file (Ref./Gold/Human)
+2) Source language
+3) Target language
+
+Default value : setid="example_set", docid="doc1", sysid="sample_system", genre="nw", refid="ref1"
+
+Target XML Structure: 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval>
+<refset setid="example_set" srclang="English" trglang="Hindi" refid="ref1">
+<doc docid="doc1" genre="nw">
+<p>
+<seg id="1">Ref./Gold/Human Sent-1</seg>
+<seg id="2">Ref./Gold/Human Sent-2</seg>
+:
+:
+</p>
+</doc>
+</refset>
+</mteval>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mteval SYSTEM "ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-xml-v1.3.dtd">
+<mteval>
+<srcset setid="example_set" srclang="english">
+<doc docid="doc1" genre="nw">
+<p>
+<seg id="1">CONSENT TO TAKE PART IN A CLINICAL TRIAL</seg>
+<seg id="2">Study Title: Autologous cultured chondrocytes from iliac crest in the treatment of physeal bars in children</seg>
+<seg id="3">Procedure: Cartilage harvest / Cartilage transplantation</seg>
+<seg id="4">Study Number:</seg>
+<seg id="5">Participant’s name:</seg>
+<seg id="6">Date of Birth / Age (in years):</seg>
+<seg id="7">I ___ Father/mother/guardian of ___</seg>
+<seg id="8">(Please tick boxes)</seg>
+<seg id="9">Declare that</seg>
+<seg id="10">I have read the information sheet provided to me regarding this study and have clarified any doubts that I had.</seg>
+<seg id="11">I also understand that the participation of ___ my son/daughter/ward in this study is entirely voluntary and that I am free to withdraw permission to continue his/her participation at any time without affecting my usual treatment or my legal rights.</seg>
+<seg id="12">I understand that I will receive free treatment for any study related injury but I will not receive any other financial compensation.</seg>
+<seg id="13">I understand that the study staff and institutional ethics committee members will not need my permission to look at my health records even if I withdraw from the trial. I agree to this access.</seg>
+<seg id="14">I understand that my identity will not be revealed in any information released to third parties or published.</seg>
+<seg id="15">I understand that my child’s tissue samples will be stored for the future use for five years and such tissue will be used for my child only up to three years.</seg>
+<seg id="16">I voluntarily agree to take part in this study.</seg>
+<seg id="17">Name:</seg>
+<seg id="18">Signature/Thumb impression:</seg>
+<seg id="19">Date:</seg>
+<seg id="20">Name of witness:</seg>
+<seg id="21">Relation to participant:</seg>
+<seg id="22">Name of the investigator:</seg>
+</p>
+</doc>
+</srcset>
+</mteval>
